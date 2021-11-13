@@ -407,6 +407,7 @@ def lineBot(op):
                             cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
                         cl.sendMessage(to, "總共 {} 人".format(str(len(nama))))
                         initate.clear()
+                        Xu = False
                 elif text.lower() in ['n'] and len(initate) > 0:
                         cl.sendMessage(msg.to, "成功取消")
                         initate.clear()
